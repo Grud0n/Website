@@ -1,0 +1,94 @@
+/* Allgemeine Stile */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff; /* Weiß */
+  color: #4a4c24; /* Dunkelgrün */
+}
+
+/* Header-Stile */
+header {
+  background-color: #c63d24; /* Rot */
+  padding: 20px;
+  color: #ffffff; /* Weiß */
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+}
+
+.nav-links a {
+  color: #ffffff; /* Weiß */
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.toggle-switch-label {
+  background-color: #ffffff; /* Weiß */
+}
+
+/* Hauptbereich-Stile */
+main {
+  padding: 20px;
+}
+
+/* FAQ-Abschnitt-Stile */
+.faq-section {
+  background-color: #ffffff; /* Weiß */
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+}
+
+/* Footer-Stile */
+footer {
+  background-color: #c63d24; /* Rot */
+  padding: 20px;
+  color: #ffffff; /* Weiß */
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .toggle-switch-label {
+    display: block;
+    width: 40px;
+    height: 20px;
+    background-color: #ffffff; /* Weiß */
+    position: relative;
+  }
+
+  .toggle-switch-label:before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #4a4c24; /* Dunkelgrün */
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease;
+  }
+
+  input[type='checkbox'] {
+    display: none;
+  }
+
+  input[type='checkbox']:checked + .toggle-switch-label:before {
+    left: 20px;
+  }
+
+  .nav-links a {
+    display: block;
+    margin: 10px 0;
+  }
+}
